@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Perpetua+Titling+MT&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prestige+Elite+Std&display=swap" rel="stylesheet">
+    <title>Happy Teacher's Day</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Prestige Elite Std', monospace;
+            background: url('https://images.unsplash.com/photo-1512286748021-26c45a8c5bc6') no-repeat center center fixed; /* Floral background */
+            background-size: cover;
+            color: #333;
+        }
+
+        .container {
+            position: relative; /* Position relative for absolute positioning of pseudo-elements */
+            max-width: 800px;
+            margin: 50px auto; /* Center the container and add some margin */
+            padding: 20px;
+            background: rgba(255, 0, 0, 0.9); /* Semi-transparent red background */
+            background-image: url('https://images.unsplash.com/photo-1573164574413-0a1b86e7c9c7'); /* Red flowers background */
+            background-size: cover; /* Ensure the background covers the container */
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            text-align: left; /* Align text to the left for better readability */
+            overflow: hidden; /* Hide overflow to maintain tape shape */
+        }
+
+        .container::before,
+        .container::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 20px; /* Height of the tape */
+            background: rgba(255, 0, 0, 0.9); /* Same red background */
+            z-index: 1; /* Layering above the container */
+        }
+
+        .container::before {
+            top: -10px; /* Position above */
+            left: 0;
+            transform: rotate(-2deg); /* Slight slant effect */
+        }
+
+        .container::after {
+            bottom: -10px; /* Position below */
+            left: 0;
+            transform: rotate(2deg); /* Slight slant effect */
+        }
+
+        h1 {
+            font-family: 'Perpetua Titling MT', serif;
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center; /* Center the header */
+            color: white; /* Text color for better contrast */
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: white; /* Change text color to white for better readability */
+        }
+
+        .signature {
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: 40px;
+            color: white; /* Change signature color to white */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dear Beloved Teacher,</h1>
+        <p>Thank you for always teaching and guiding us through each of life's battles. Your unwavering love and support have been a source of strength for us all. I know time will pass, and we may not see each other again, but in my heart, I will always remain the student you once met.</p>
+        <p>From the very first day in your classroom, you welcomed us with open arms, creating a safe and nurturing environment where we felt encouraged to express ourselves and explore our potential. Your passion for teaching ignited a spark within us, inspiring us to strive for excellence and believe in our abilities. The lessons you imparted extended far beyond the classroom, shaping our character and values, and teaching us the importance of perseverance, empathy, and hard work.</p>
+        <p>I will cherish every moment we spent together at school—the ups and downs, the laughter, the tears, and the hard work we shared in class. Whether it was tackling challenging subjects or celebrating our achievements, your guidance was always there, illuminating our path. The memories of our group projects, lively discussions, and your inspiring stories will forever be etched in my mind.</p>
+        <p>Your dedication to our growth did not go unnoticed. You took the time to understand each of us as individuals, recognizing our strengths and weaknesses, and helping us to cultivate our unique talents. You taught us to embrace our differences and to support one another, fostering a sense of community that made school a truly special place.</p>
+        <p>As we move forward in our lives, the values and lessons you've instilled in us will continue to guide our decisions and shape our futures. We may be parting ways, but the impact you've had on our lives will remain with us forever. Your influence has been immeasurable, and I am deeply grateful for everything you've done.</p>
+        <p>Take care always. May you be blessed with prosperity and good health. Happy Teacher's Day!</p>
+        <p class="signature">Respectfully,<br>Erick Nathan A. Canlas</p>
+    </div>
+</body>
+</html>
